@@ -15,6 +15,16 @@ router.get('/',pagesController.getIndexPage)
 
 //后台管理页面,同意添加admin作为前缀
       .get('/admin',pagesController.getAdminPage)
-
+      .get('/admin/categories',pagesController.getCategoriesPage)
+      .get('/admin/comments',pagesController.getCommentsPage)
+      .get('/admin/login',pagesController.getLoginPage)
+      .get('/admin/nav-menus',pagesController.getNavMenusPage)
+      .get('/admin/password-reset',pagesController.getPassWordPage)
+      .get('/admin/post-add',pagesController.getPostAddPage)
+      .get('/admin/posts',pagesController.getPostsPage)
+      .get('/admin/profile',pagesController.getProfilePage)
+      .get('/admin/settings',pagesController.getSettingsPage)
+      .get('/admin/slides',pagesController.getSlidesPage)
+      .get('/admin/users',pagesController.getUsersPage)
 //暴露路由
 module.exports = router
